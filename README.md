@@ -1,6 +1,6 @@
 def roman_to_integer(s):
 
-    roman_values = {
+roman_values = {
         'I': 1,
         'V': 5,
         'X': 10,
@@ -10,10 +10,10 @@ def roman_to_integer(s):
         'M': 1000
     }
     
-    total = 0
+ total = 0
     i = 0
     
-    while i < len(s):
+while i < len(s):
         # Check if this is a subtraction case
         if i + 1 < len(s) and roman_values[s[i]] < roman_values[s[i + 1]]:
             # Subtract current value from the next value
@@ -24,4 +24,4 @@ def roman_to_integer(s):
             total += roman_values[s[i]]
             i += 1
     
-    return total
+  return total
