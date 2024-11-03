@@ -16,12 +16,9 @@ def roman_to_int(roman):
         prev_value = current_value
 
     return total
-
-# Запитуємо у користувача римське число
+    
 roman_number = input("Введіть римське число: ").upper()
 
-# Перетворюємо його у звичайне число
-try:
     result = roman_to_int(roman_number)
     print(f"Звичайне число: {result}")
 except KeyError:
